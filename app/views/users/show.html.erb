@@ -12,7 +12,8 @@
 
 <p>
   <strong>First tweet:</strong>
-  <%= @user.microposts.first.content %>
+  <%= first = @user.microposts.first %>
+  <%= first.nil? ? "nothing yet" : @user.microposts.first.content %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
