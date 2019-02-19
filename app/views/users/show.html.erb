@@ -12,7 +12,7 @@
 
 <p>
   <strong>First tweet:</strong>
-  <%= first = @user.microposts.first %>
+  <% first = @user.microposts.first %>
   <%= first.nil? ? "nothing yet" : @user.microposts.first.content %>
 </p>
 
